@@ -1,7 +1,7 @@
 ﻿
 namespace c_sharp_demo
 {
-    partial class Form1
+    partial class UserSaveForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。
