@@ -42,8 +42,11 @@ namespace c_sharp_demo
             this.ActionButtonsPanel = new System.Windows.Forms.Panel();
             this.SaveButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
+            this.SaveStatus = new System.Windows.Forms.StatusStrip();
+            this.StatusText = new System.Windows.Forms.ToolStripStatusLabel();
             this.PricePlanGroupBox.SuspendLayout();
             this.ActionButtonsPanel.SuspendLayout();
+            this.SaveStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // IDLabel
@@ -146,7 +149,7 @@ namespace c_sharp_demo
             this.ActionButtonsPanel.Controls.Add(this.CloseButton);
             this.ActionButtonsPanel.Controls.Add(this.SaveButton);
             this.ActionButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ActionButtonsPanel.Location = new System.Drawing.Point(0, 246);
+            this.ActionButtonsPanel.Location = new System.Drawing.Point(0, 224);
             this.ActionButtonsPanel.Name = "ActionButtonsPanel";
             this.ActionButtonsPanel.Size = new System.Drawing.Size(284, 65);
             this.ActionButtonsPanel.TabIndex = 8;
@@ -172,12 +175,28 @@ namespace c_sharp_demo
             this.CloseButton.Text = "閉じる";
             this.CloseButton.UseVisualStyleBackColor = true;
             // 
+            // SaveStatus
+            // 
+            this.SaveStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusText});
+            this.SaveStatus.Location = new System.Drawing.Point(0, 289);
+            this.SaveStatus.Name = "SaveStatus";
+            this.SaveStatus.Size = new System.Drawing.Size(284, 22);
+            this.SaveStatus.TabIndex = 9;
+            this.SaveStatus.Text = "statusStrip1";
+            // 
+            // StatusText
+            // 
+            this.StatusText.Name = "StatusText";
+            this.StatusText.Size = new System.Drawing.Size(0, 17);
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 311);
             this.Controls.Add(this.ActionButtonsPanel);
+            this.Controls.Add(this.SaveStatus);
             this.Controls.Add(this.EnableComboBox);
             this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.PricePlanGroupBox);
@@ -191,6 +210,8 @@ namespace c_sharp_demo
             this.PricePlanGroupBox.ResumeLayout(false);
             this.PricePlanGroupBox.PerformLayout();
             this.ActionButtonsPanel.ResumeLayout(false);
+            this.SaveStatus.ResumeLayout(false);
+            this.SaveStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +232,8 @@ namespace c_sharp_demo
         private System.Windows.Forms.Panel ActionButtonsPanel;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.StatusStrip SaveStatus;
+        private System.Windows.Forms.ToolStripStatusLabel StatusText;
     }
 }
 
