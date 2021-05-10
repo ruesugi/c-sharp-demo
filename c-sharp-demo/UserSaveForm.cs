@@ -17,6 +17,7 @@ namespace c_sharp_demo
             InitializeComponent();
 
             ChangeMailAddressTextBoxEnabled();
+            ChangeNoteLabelVisible();
         }
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -28,6 +29,16 @@ namespace c_sharp_demo
         {
             MailAddressLabel.Enabled = MailCheckBox.Checked;
             MailAddressTextBox.Enabled = MailCheckBox.Checked;
+        }
+
+        private void BusinessRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeNoteLabelVisible();
+        }
+
+        private void ChangeNoteLabelVisible()
+        {
+            NoteLabel.Visible = BusinessRadioButton.Checked;
         }
     }
 }
