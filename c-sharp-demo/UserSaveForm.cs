@@ -18,6 +18,9 @@ namespace c_sharp_demo
 
             ChangeMailAddressTextBoxEnabled();
             ChangeNoteLabelVisible();
+
+            EnableComboBox.Items.Add("有効");
+            EnableComboBox.Items.Add("無効");
         }
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
