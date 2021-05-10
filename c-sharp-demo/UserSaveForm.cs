@@ -16,12 +16,8 @@ namespace c_sharp_demo
         {
             InitializeComponent();
 
-            FreeRadioButton.Checked = true;
-            ChangeNoteLabelVisible();
-
-            EnableComboBox.Items.Add("有効");
-            EnableComboBox.Items.Add("無効");
-            EnableComboBox.SelectedIndex = 0;
+            InitializePricePlan();
+            InitializeEnableSetting();
         }
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -43,6 +39,19 @@ namespace c_sharp_demo
         private void ChangeNoteLabelVisible()
         {
             NoteLabel.Visible = BusinessRadioButton.Checked;
+        }
+
+        private void InitializePricePlan()
+        {
+            FreeRadioButton.Checked = true;
+            ChangeNoteLabelVisible();
+        }
+
+        private void InitializeEnableSetting()
+        {
+            EnableComboBox.Items.Add("有効");
+            EnableComboBox.Items.Add("無効");
+            EnableComboBox.SelectedIndex = 0;
         }
     }
 }
