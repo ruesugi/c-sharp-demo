@@ -130,6 +130,7 @@ namespace c_sharp_demo
             // 
             // EnableComboBox
             // 
+            this.EnableComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EnableComboBox.FormattingEnabled = true;
             this.EnableComboBox.Location = new System.Drawing.Point(14, 190);
             this.EnableComboBox.Name = "EnableComboBox";
