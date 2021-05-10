@@ -16,11 +16,12 @@ namespace c_sharp_demo
         {
             InitializeComponent();
 
-            ChangeMailAddressTextBoxEnabled();
+            FreeRadioButton.Checked = true;
             ChangeNoteLabelVisible();
 
             EnableComboBox.Items.Add("有効");
             EnableComboBox.Items.Add("無効");
+            EnableComboBox.SelectedIndex = 0;
         }
 
         private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
