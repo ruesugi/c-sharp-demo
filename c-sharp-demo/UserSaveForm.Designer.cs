@@ -37,6 +37,7 @@ namespace c_sharp_demo
             this.PricePlanGroupBox = new System.Windows.Forms.GroupBox();
             this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.BusinessRadioButton = new System.Windows.Forms.RadioButton();
+            this.NoteLabel = new System.Windows.Forms.Label();
             this.PricePlanGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,11 +117,21 @@ namespace c_sharp_demo
             this.BusinessRadioButton.Text = "ビジネス";
             this.BusinessRadioButton.UseVisualStyleBackColor = true;
             // 
+            // NoteLabel
+            // 
+            this.NoteLabel.AutoSize = true;
+            this.NoteLabel.Location = new System.Drawing.Point(14, 156);
+            this.NoteLabel.Name = "NoteLabel";
+            this.NoteLabel.Size = new System.Drawing.Size(91, 12);
+            this.NoteLabel.TabIndex = 6;
+            this.NoteLabel.Text = "無制限で使えます";
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 311);
+            this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.PricePlanGroupBox);
             this.Controls.Add(this.MailAddressTextBox);
             this.Controls.Add(this.MailAddressLabel);
@@ -146,6 +157,7 @@ namespace c_sharp_demo
         private System.Windows.Forms.GroupBox PricePlanGroupBox;
         private System.Windows.Forms.RadioButton BusinessRadioButton;
         private System.Windows.Forms.RadioButton FreeRadioButton;
+        private System.Windows.Forms.Label NoteLabel;
     }
 }
 
