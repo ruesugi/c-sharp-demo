@@ -15,6 +15,19 @@ namespace c_sharp_demo
         public UserSaveForm()
         {
             InitializeComponent();
+
+            ChangeMailAddressTextBoxEnabled();
+        }
+
+        private void MailCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeMailAddressTextBoxEnabled();
+        }
+
+        private void ChangeMailAddressTextBoxEnabled()
+        {
+            MailAddressLabel.Enabled = MailCheckBox.Checked;
+            MailAddressTextBox.Enabled = MailCheckBox.Checked;
         }
     }
 }
