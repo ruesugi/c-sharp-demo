@@ -53,5 +53,26 @@ namespace c_sharp_demo
             EnableComboBox.Items.Add("無効");
             EnableComboBox.SelectedIndex = 0;
         }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("保存しますか？",
+                                                  "確認",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                StatusText.Text = "保存しました";
+            }
+            else
+            {
+                StatusText.Text = "キャンセルしました";
+            }
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

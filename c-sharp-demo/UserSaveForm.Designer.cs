@@ -39,7 +39,14 @@ namespace c_sharp_demo
             this.FreeRadioButton = new System.Windows.Forms.RadioButton();
             this.NoteLabel = new System.Windows.Forms.Label();
             this.EnableComboBox = new System.Windows.Forms.ComboBox();
+            this.ActionButtonsPanel = new System.Windows.Forms.Panel();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.SaveStatus = new System.Windows.Forms.StatusStrip();
+            this.StatusText = new System.Windows.Forms.ToolStripStatusLabel();
             this.PricePlanGroupBox.SuspendLayout();
+            this.ActionButtonsPanel.SuspendLayout();
+            this.SaveStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // IDLabel
@@ -137,11 +144,60 @@ namespace c_sharp_demo
             this.EnableComboBox.Size = new System.Drawing.Size(121, 20);
             this.EnableComboBox.TabIndex = 7;
             // 
+            // ActionButtonsPanel
+            // 
+            this.ActionButtonsPanel.Controls.Add(this.CloseButton);
+            this.ActionButtonsPanel.Controls.Add(this.SaveButton);
+            this.ActionButtonsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ActionButtonsPanel.Location = new System.Drawing.Point(0, 224);
+            this.ActionButtonsPanel.Name = "ActionButtonsPanel";
+            this.ActionButtonsPanel.Size = new System.Drawing.Size(284, 65);
+            this.ActionButtonsPanel.TabIndex = 8;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CloseButton.Location = new System.Drawing.Point(75, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(75, 65);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.Text = "閉じる";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SaveButton.Location = new System.Drawing.Point(0, 0);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 65);
+            this.SaveButton.TabIndex = 0;
+            this.SaveButton.Text = "保存";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
+            // SaveStatus
+            // 
+            this.SaveStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusText});
+            this.SaveStatus.Location = new System.Drawing.Point(0, 289);
+            this.SaveStatus.Name = "SaveStatus";
+            this.SaveStatus.Size = new System.Drawing.Size(284, 22);
+            this.SaveStatus.TabIndex = 9;
+            this.SaveStatus.Text = "statusStrip1";
+            // 
+            // StatusText
+            // 
+            this.StatusText.Name = "StatusText";
+            this.StatusText.Size = new System.Drawing.Size(0, 17);
+            // 
             // UserSaveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 311);
+            this.Controls.Add(this.ActionButtonsPanel);
+            this.Controls.Add(this.SaveStatus);
             this.Controls.Add(this.EnableComboBox);
             this.Controls.Add(this.NoteLabel);
             this.Controls.Add(this.PricePlanGroupBox);
@@ -154,6 +210,9 @@ namespace c_sharp_demo
             this.Text = "ユーザー登録";
             this.PricePlanGroupBox.ResumeLayout(false);
             this.PricePlanGroupBox.PerformLayout();
+            this.ActionButtonsPanel.ResumeLayout(false);
+            this.SaveStatus.ResumeLayout(false);
+            this.SaveStatus.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +230,11 @@ namespace c_sharp_demo
         private System.Windows.Forms.RadioButton FreeRadioButton;
         private System.Windows.Forms.Label NoteLabel;
         private System.Windows.Forms.ComboBox EnableComboBox;
+        private System.Windows.Forms.Panel ActionButtonsPanel;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.StatusStrip SaveStatus;
+        private System.Windows.Forms.ToolStripStatusLabel StatusText;
     }
 }
 
