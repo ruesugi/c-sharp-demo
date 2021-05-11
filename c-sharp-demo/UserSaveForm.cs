@@ -56,10 +56,18 @@ namespace c_sharp_demo
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("保存しますか？",
-                            "確認",
-                            MessageBoxButtons.YesNo,
-                            MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("保存しますか？",
+                                                  "確認",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                StatusText.Text = "保存しました";
+            }
+            else
+            {
+                StatusText.Text = "キャンセルしました";
+            }
         }
     }
 }

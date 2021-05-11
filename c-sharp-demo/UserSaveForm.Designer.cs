@@ -40,8 +40,8 @@ namespace c_sharp_demo
             this.NoteLabel = new System.Windows.Forms.Label();
             this.EnableComboBox = new System.Windows.Forms.ComboBox();
             this.ActionButtonsPanel = new System.Windows.Forms.Panel();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.SaveStatus = new System.Windows.Forms.StatusStrip();
             this.StatusText = new System.Windows.Forms.ToolStripStatusLabel();
             this.PricePlanGroupBox.SuspendLayout();
@@ -154,6 +154,16 @@ namespace c_sharp_demo
             this.ActionButtonsPanel.Size = new System.Drawing.Size(284, 65);
             this.ActionButtonsPanel.TabIndex = 8;
             // 
+            // CloseButton
+            // 
+            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CloseButton.Location = new System.Drawing.Point(75, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(75, 65);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.Text = "閉じる";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            // 
             // SaveButton
             // 
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Left;
@@ -164,16 +174,6 @@ namespace c_sharp_demo
             this.SaveButton.Text = "保存";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CloseButton.Location = new System.Drawing.Point(75, 0);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(75, 65);
-            this.CloseButton.TabIndex = 1;
-            this.CloseButton.Text = "閉じる";
-            this.CloseButton.UseVisualStyleBackColor = true;
             // 
             // SaveStatus
             // 
