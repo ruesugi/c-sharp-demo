@@ -63,6 +63,23 @@ namespace c_sharp_demo
                                                   MessageBoxIcon.Question);
             if(result == DialogResult.Yes)
             {
+                using (var sw = new System.IO.StreamWriter("user_data.csv", true, Encoding.UTF8))
+                {
+                    sw.Write(IDTextBox.Text + ",");
+                    sw.Write(MailCheckBox.Checked + ",");
+                    sw.Write(MailAddressTextBox.Text + ",");
+                    if (BusinessRadioButton.Checked)
+                    {
+                        sw.Write(1 + ",");
+                    }
+                    else
+                    {
+                        sw.Write(0 + ",");
+                    }
+                    sw.Write(EnableComboBox.Text);
+                    sw.WriteLine("");
+
+                }
                 StatusText.Text = "保存しました";
             }
             else
