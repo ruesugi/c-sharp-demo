@@ -24,5 +24,13 @@ namespace c_sharp_demo
                 f.ShowDialog();
             }
         }
+
+        private void UserListFormButton_Click(object sender, EventArgs e)
+        {
+            using (var f = new UserListForm())
+            {
+                f.ShowDialog();
+            }
+        }
     }
 }

@@ -53,6 +53,7 @@ namespace c_sharp_demo
             this.UserListFormButton.TabIndex = 1;
             this.UserListFormButton.Text = "ユーザーリスト";
             this.UserListFormButton.UseVisualStyleBackColor = true;
+            this.UserListFormButton.Click += new System.EventHandler(this.UserListFormButton_Click);
             // 
             // MenuForm
             // 
