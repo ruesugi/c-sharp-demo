@@ -69,5 +69,10 @@ namespace c_sharp_demo
                 StatusText.Text = "キャンセルしました";
             }
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
