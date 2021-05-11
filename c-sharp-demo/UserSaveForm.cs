@@ -16,6 +16,7 @@ namespace c_sharp_demo
         {
             InitializeComponent();
 
+            ChangeMailAddressTextBoxEnabled();
             InitializePricePlan();
             InitializeEnableSetting();
         }
