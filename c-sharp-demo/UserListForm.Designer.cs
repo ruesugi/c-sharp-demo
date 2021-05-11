@@ -37,7 +37,7 @@ namespace c_sharp_demo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.Name = "UserListForm";
-            this.Text = "UserListForm";
+            this.Text = "ユーザーリスト";
             this.ResumeLayout(false);
 
         }

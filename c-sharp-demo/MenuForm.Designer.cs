@@ -63,7 +63,7 @@ namespace c_sharp_demo
             this.Controls.Add(this.UserListFormButton);
             this.Controls.Add(this.UserSaveFormButton);
             this.Name = "MenuForm";
-            this.Text = "MenuForm";
+            this.Text = "メニュー";
             this.ResumeLayout(false);
 
         }
