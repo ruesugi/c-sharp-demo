@@ -35,8 +35,15 @@ namespace c_sharp_demo
             // 
             // UserDataGrid
             // 
+            this.UserDataGrid.AllowUserToAddRows = false;
+            this.UserDataGrid.AllowUserToDeleteRows = false;
+            this.UserDataGrid.AllowUserToResizeColumns = false;
+            this.UserDataGrid.AllowUserToResizeRows = false;
+            this.UserDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.UserDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.UserDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UserDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserDataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.UserDataGrid.Location = new System.Drawing.Point(0, 0);
             this.UserDataGrid.Name = "UserDataGrid";
             this.UserDataGrid.RowTemplate.Height = 21;
